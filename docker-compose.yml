@@ -63,14 +63,14 @@ networks:
   seat-management-network:
 
   # .\mvnw.cmd clean package -DskipTests
-  # docker build -t seat-management-backend:1.0.1 .
-  # docker tag seat-management-backend:1.0.1 arshadali15/seat-management-backend:1.0.1
+  # docker build --platform linux/amd64,linux/arm64 -t seat-management-backend:1.0.2 .
+  # docker tag seat-management-backend:1.0.2 arshadali15/seat-management-backend:1.0.2
   # docker login
-  # docker push arshadali15/seat-management-backend:1.0.1
+  # docker push arshadali15/seat-management-backend:1.0.2
 
-  # docker build -t seat-management-ui:1.0.1 .
-  # docker tag seat-management-ui:1.0.1 arshadali15/seat-management-ui:1.0.1
-  # docker push arshadali15/seat-management-ui:1.0.1
+  # docker build --platform linux/amd64,linux/arm64 -t seat-management-ui:1.0.2 .
+  # docker tag seat-management-ui:1.0.2 arshadali15/seat-management-ui:1.0.2
+  # docker push arshadali15/seat-management-ui:1.0.2
 
 
   # docker buildx build --platform linux/amd64,linux/arm64 -t arshadali15/seat-management-ui:1.0.2 --push .
