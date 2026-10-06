@@ -463,3 +463,7 @@ VALUES
     'EMPLOYEE',
     'SLS0025'
 );
+
+CREATE UNIQUE INDEX uk_booking_desk_date_booked
+    ON bookings (desk_id, booking_date)
+    WHERE status = 'BOOKED';
